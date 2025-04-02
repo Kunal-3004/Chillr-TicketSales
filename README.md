@@ -1,4 +1,4 @@
-# hackfest_25
+# Mobile App for Ticket Sales Tracking & Event Analytics
 
 A new Flutter project.
 
