@@ -99,6 +99,7 @@ class Sidebar extends StatelessWidget {
           icon: CupertinoIcons.tickets,
           label: 'Tickets',
           onTap: () {
+
             Navigator.push(context, MaterialPageRoute(builder: (context) => const Tickets()));
           },
         ),

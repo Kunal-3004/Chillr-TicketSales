@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hackfest_25/screens/add_event.dart';
 import 'package:hackfest_25/screens/dashboard.dart';
 import 'package:hackfest_25/screens/history.dart';
 import 'package:hackfest_25/screens/profile.dart';
@@ -44,12 +45,15 @@ class _HomeState extends State<Home> {
           shape: CircleBorder(),
           backgroundColor: Color(0xFFFFE0B2),
           foregroundColor: Colors.black,
-          onPressed: (){},
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>AddEvent()));
+          },
           child: Icon(Icons.add,weight: 10,),
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         extendBody: true,
-        bottomNavigationBar: BottomNavBar(index: index, onChangedTab: onChangedTab,)
+        bottomNavigationBar: BottomNavBar(index: index, onChangedTab: onChangedTab,),
+        body: pages[index],
       ),
     );
   }
